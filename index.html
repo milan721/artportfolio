@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bitcount+Grid+Double:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <!-- header -->
+         <nav>
+            <!-- logo -->
+             <a href="./index.html"><img class="logo" src="./images/p44.png" alt="logo"></a>
+             <!-- links -->
+              <ul>
+                <li class="listitem"><a class="links" href="#home">Home</a></li>
+                <li class="listitem"><a class="links" href="#about">About</a></li>
+                <li class="listitem"><a class="links" href="#skill">Skills</a></li>
+                <li class="listitem"><a class="links" href="#contacts">Contact</a></li>
+                <li class="listitem"><a class="links" href="./gallery.html" target="_blank">Gallery</a></li>
+              </ul>
+         </nav>
+
+
+         <!-- Home -->
+        <section id="home">
+            <!-- left -->
+            <div class="home-content">
+                <h1 class="animate__animated animate__lightSpeedInLeft" id="username">I'm Milan Abraham<span id="lastname"> Thomas</span></h1>
+                <p class="animate__animated animate__lightSpeedInLeft" id="userdetails">I'm an aspiring full-stack developer and digital artist, passionate about blending code and creativity.
+                </p>
+                <a id="download" href="./pdfs/Milan (2).pdf" download>Download CV</a>
+            </div>
+
+            <!-- right image -->
+            <div class="home-image">
+                <!-- shape -->
+                <img class="group1" id="shape" src="./images/1000147960__1_-removebg-preview.png" alt="shape">
+                <!-- person -->
+                <img class="group1" id="person" src="./images/p44.png" alt="person">
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="sectionHead">
+                <h2 class="mainHead">About Me</h2>
+                </div>
+                
+            <div class="aboutBody">
+                <div data-aos="fade-right" class="aboutImg">
+                    <a href="https://en.wikipedia.org/wiki/Black_hole" target="_blank"><img class="img1" src="./images/untitled10.png" alt="about"></a>
+                </div>
+
+                <div data-aos="fade-left" class="aboutContent">
+                    <p>I'm a B.Tech graduate in Computer Science and Engineering with a strong passion for full stack web development and related technologies. As an aspiring full-stack developer, I would like to use various technologies like HTML, CSS, JavaScript, React, Figma, and Node.js to create and design web applications that are intuitive, responsive and user-friendly.
+                    Alongside my technical endeavours, I'm also a passionate digital artist, who specialize in creating high-quality 2D and 3D art and animations using tools like Blender, Spline, Adobe and Unreal Engine <span id="boo"><a id="boo" href="./gallery.html" target="_blank">Gallery</a></span>.
+                    My aim is to combine both this worlds to craft an immersive digital experience that's both functional and visually striking</p>
+                <div class="information">
+                    <div class="infox">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <span>Milan Abraham Thomas</span>
+                    </div>
+
+                    <div class="infox">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span id="h">thomasmilanabraham@gmail.com</span>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- skills -->
+        <section id="skill">
+            <div class="sectionHead">
+                <h2 class="mainHead">Skills</h2>
+            </div>
+            <div class="skillContent">
+                <div data-aos="fade-right" class="skillp">
+                    
+                    <p>I have a solid understanding of HTML and CSS, with growing experience in JavaScript. Currently diving into the MERN stack (MongoDB, Express, React, Node.js) to build full-stack applications. I also have a relatively strong background in both traditional and digital art. Thus I'm Skilled in creating digital illustrations, 2D/3D animations, and renders using tools like Blender, Photoshop, and similar software. I'm also comfortable using Git and GitHub for version control, collaborating on projects, and maintaining clean code history <span id="boo"><a id="boo" href="./gallery.html" target="_blank">Gallery</a></span>.</p>
+                </div>
+                <div class="progressBars">
+                    <!-- bar 1 -->
+                    <div class="bars">
+                        <h3 class="barHead">HTML</h3>
+                        <span class="barPercent">85%</span>
+                        <div class="baseBar"></div>
+                        <div data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" class="baseBar portBar"></div>
+
+                    </div>
+
+                    <!-- bar 2 -->
+                    <div class="bars">
+                        <h3 class="barHead">CSS</h3>
+                        <span class="barPercent">81%</span>
+                        <div class="baseBar"></div>
+                        <div data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" class="baseBar LandBar"></div>
+                    </div>
+
+                    <!-- bar 3 -->
+                    <div class="bars">
+                        <h3 class="barHead">Version Control (GIT)</h3>
+                        <span class="barPercent">65%</span>
+                        <div class="baseBar"></div>
+                        <div data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" class="baseBar EBar"></div>
+                    </div>
+
+                    <!-- bar 4 -->
+                    <div class="bars">
+                        <h3 class="barHead">Blender 3D</h3>
+                        <span class="barPercent">78%</span>
+                        <div class="baseBar"></div>
+                        <div data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" class="baseBar WBar"></div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!-- contact -->
+        
+        <!-- footer -->
+         <footer>
+
+            <section id="contacts">
+            <div class="sectionHead">
+                <h2 class="mainHead" id="con">Contacts</h2>
+                <p class="subHead" id="con1">Get in touch with me</p>
+            </div>
+            <div class="iconcollection">
+                <!-- linkedin -->
+                 <div class="icon">
+                    <a href="https://www.linkedin.com/in/milan-abraham-thomas-654890249/" target="_blank"><i class="fa-brands fa-linkedin brands"></i></a>
+                 </div>
+
+                 <!-- GitHub -->
+                 <div class="icon">
+                    <a href="https://github.com/milan721" target="_blank"><i class="fa-brands fa-github brands"></i></a>
+                 </div>
+
+                 <!-- Insta -->
+                 <div class="icon">
+                    <a href="https://www.instagram.com/mil_an_07/" target="_blank"><i class="fa-brands fa-instagram brands"></i></a>
+                 </div>
+
+            </div>
+        </section>
+
+
+            <p id="copyright">Milan Abraham Thomas Portfolio - july 2025, &reg; All Rights Reserved</p>
+            
+
+            <!-- uparrow -->
+                 <div class="icon upArrow">
+                    <a href="#container"><i class="fa-solid fa-arrow-up brands"></i></a>
+                 </div>
+         </footer>
+
+
+    </div>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+ 
+</html>

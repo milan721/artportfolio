@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    background-color: #E4D4C8;
+}
+
+div{
+    padding: 10px;
+    float: left;
+    width: 400px;
+    height: 225px;
+    background-color: white;
+}
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    background-color: #E2E6E7;
+    padding-bottom: 30px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+#a{
+    margin-left: 90px;
+    margin-top: 180px;
+}
+#b{
+    margin-left: 30px;
+    margin-top: 180px;
+}
+
+#c{
+    margin-left: 30px;
+    margin-top: 180px;
+}
+
+#d{
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#e{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#f{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#g{
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#h{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#i{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#j{
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#k{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#l{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#m{
+    margin-left: 90px;
+    margin-top: 40px;
+}
+
+#n{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#o{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+
+.gg:hover{
+    background-color:#D0B49F;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D0B49F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #E2E6E7;
+}
+
+

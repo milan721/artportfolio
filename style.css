@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #E2E6E7;
+    z-index: 1;
+    padding: 10px 90px;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+#home {
+    padding-top: 80px;
+}
+
+body{
+    background-color: #E4D4C8;
+}
+
+.listitem {
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+   
+}
+
+.links:hover {
+    color: #D0B49F;
+}
+
+
+.home-content {
+    margin: 13% 0px 0px 8%;
+}
+
+#username {
+    font-size: 50px;
+    margin-bottom: 1px;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-weight: 500;
+    
+}
+
+#lastname {
+    font-family: "Bitcount Grid Double", system-ui;
+    font-weight: 500;
+    color: #cb6a20;
+}
+
+#userdetails{
+line-height: 2.5;
+font-size: 20px;
+}
+
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding:15px;
+    border-radius: 20px;
+    display:inline-block;
+}
+
+#download:hover{
+    background-color: #D0B49F;
+    color: #201A1E;
+}
+
+#boo{
+    color: rgb(211, 115, 42);
+    text-decoration: none;
+}
+
+.home-image{
+    width:45%;
+    height:75%;
+    bottom:0px;
+    position: absolute;
+    right:30px;
+}
+
+.group1{
+    position: absolute;
+    height:100%;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+
+.home-image:hover #shape{
+    bottom: 90px;
+}
+.home-image:hover #person{
+    left: 40%;
+}
+
+#shape{
+    height: 350px;
+    padding-right: 20px;
+}
+
+#about{
+    margin: 30% 8% 0px 8% ;
+}
+
+.sectionHead{
+    text-align: center;
+}
+
+.mainHead{
+    font-size: 30px;
+}
+
+.subHead{
+    font-size: 20px;
+    color: #201A1E;
+    padding-bottom: 30px;
+}
+
+.aboutBody{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.img1{
+    width: 80%;
+    border: solid #ffffff 7px;
+}
+
+.aboutContent{
+    font-size: 20px;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#h{
+    text-transform: lowercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.information{
+    margin-top: 1.3rem;
+}
+
+.infox{
+    margin-bottom: 10px;
+}
+
+.infox>span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin: 17% 8% 0px 8%;
+}
+
+.skillContent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 80px;
+}
+
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+
+
+.skillp{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.barHead,.barPercent{
+    font-weight: 500;
+}
+
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+
+}
+
+.portBar{
+    background-color: rgb(93, 172, 14);
+    width: 85%;
+}
+
+.LandBar{
+    background-color: rgb(93, 172, 14);
+    width: 81%;
+}
+
+.EBar{
+    background-color: rgb(93, 172, 14);
+    width: 65%;
+}
+
+.WBar{
+    background-color: rgb(93, 172, 14);
+    width: 78%;
+}
+
+
+#contacts{
+    margin: 8% 8% 0px 8%;
+    padding-top: 30px;
+}
+
+#con{
+    font-size: 25px;
+}
+
+#con1{
+    font-size: 20px;
+}
+
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D0B49F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+   
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, #D0B49F,#E4D4C8, #E2E6E7);
+
+}
+
+.icon:hover .brands{
+    color: #201A1E;
+    animation: rotate 3s;  
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+     20%{
+        transform: rotate(-30deg);
+    }
+     40%{
+        transform: rotate(30deg);
+    }
+     60%{
+        transform: rotate(-30deg);
+    }
+     80%{
+        transform: rotate(30deg);
+    }
+     100%{
+        transform: rotate(-30deg);
+    }
+}
+
+footer{
+    margin-top: 5%;
+    background-color: #D0B49F;
+    height: 280px;
+}
+
+#copyright{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.upArrow{
+    float: right ;
+    margin: -40px 20px 20px 0px;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D0B49F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #E2E6E7;
+}
