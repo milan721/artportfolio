@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -25,14 +25,22 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #E2E6E7;
+    background-image: linear-gradient(#1DB954,#1ED760);
     z-index: 1;
-    padding: 10px 90px;
+    padding: 20px 125px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.6), 0 0 20px rgba(0, 215, 96, 0.5), 0 0 40px rgba(0, 215, 96, 0.4);
 }
 
 
-.logo {
-    width: 100px;
+
+#mat{
+    text-decoration: none;
+    color: #201A1E;
+    font-size: 20px;
+    font-family: "Bitcount Grid Double", system-ui;
+    font-weight: 700;
+    transition: transform 0.3s;
 }
 
 #home {
@@ -40,7 +48,7 @@ nav {
 }
 
 body{
-    background-color: #E4D4C8;
+    background-image: linear-gradient(to bottom right,rgba(51,51,51,0.8),rgba(0,0,0,0.85),rgba(26,26,26,0.8));
 }
 
 .listitem {
@@ -57,12 +65,19 @@ body{
 }
 
 .links:hover {
-    color: #D0B49F;
+    color: #ffffff;
+}
+
+#mat:hover {
+    color: #ffffff;
+    text-shadow:0 0 10px rgb(200, 203, 202,0.4), 0 0 20px rgb(212, 212, 212,0.3), 0 0 40px rgb(255, 255, 255,0.2);
+    transform: scale(1.05);
 }
 
 
+
 .home-content {
-    margin: 13% 0px 0px 8%;
+    margin: 8% 0px 0px 8%;
 }
 
 #username {
@@ -70,18 +85,22 @@ body{
     margin-bottom: 1px;
     font-family: "Bitcount Grid Double", system-ui;
     font-weight: 500;
+    color: #ffffff;
+    text-shadow:0 0 10px rgb(200, 203, 202,0.4), 0 0 20px rgb(212, 212, 212,0.3), 0 0 40px rgb(255, 255, 255,0.2);
     
 }
 
 #lastname {
     font-family: "Bitcount Grid Double", system-ui;
     font-weight: 500;
-    color: #cb6a20;
+    color: #1ED760;
+    text-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 #userdetails{
 line-height: 2.5;
 font-size: 20px;
+color: #ffffff;
 }
 
 #download{
@@ -91,16 +110,21 @@ font-size: 20px;
     padding:15px;
     border-radius: 20px;
     display:inline-block;
+    transition: transform 0.3s;
 }
 
 #download:hover{
-    background-color: #D0B49F;
-    color: #201A1E;
+    background-color: #1ED760;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.6), 0 0 20px rgba(0, 215, 96, 0.5), 0 0 40px rgba(0, 215, 96, 0.4);
+    color: #201A1E;  
+    transform: scale(1.05);
+  
 }
 
 #boo{
-    color: rgb(211, 115, 42);
+    color: #1ED760;
     text-decoration: none;
+    text-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 .home-image{
@@ -120,24 +144,35 @@ font-size: 20px;
     transition: bottom 2s, left 1s;
 }
 
-.home-image:hover #shape{
+/* .home-image:hover #shape{
     bottom: 90px;
 }
 .home-image:hover #person{
     left: 40%;
-}
+} */
 
 #shape{
     height: 350px;
     padding-right: 20px;
 }
 
+#person{
+    top: -50px;
+}
+
 #about{
-    margin: 30% 8% 0px 8% ;
+    margin: 35% 8% 0px 8% ;
+    border: 3px solid hsl(0, 0%, 100%, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    background:hsl(0, 0%, 100%, 0.2) ;
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0 0 8px 1px hsl(0, 0%, 100%, 0.3);
 }
 
 .sectionHead{
     text-align: center;
+    color: #ffffff;
 }
 
 .mainHead{
@@ -151,7 +186,7 @@ font-size: 20px;
 }
 
 .aboutBody{
-    margin-top: 80px;
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -166,11 +201,11 @@ font-size: 20px;
     font-size: 20px;
     line-height: 1.8rem;
     text-align: justify;
+    color: #ffffff;
 }
 
 #h{
-    text-transform: lowercase;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .information{
@@ -186,7 +221,13 @@ font-size: 20px;
 }
 
 #skill{
-    margin: 17% 8% 0px 8%;
+    margin: 25% 8% 0px 8%;
+    border: 3px solid hsl(0, 0%, 100%, 0.3);
+    padding: 1em;
+    border-radius: 1em;
+    background:hsl(0, 0%, 100%, 0.2) ;
+    backdrop-filter: blur(2px);
+    box-shadow: inset 0 0 8px 1px hsl(0, 0%, 100%, 0.3);
 }
 
 .skillContent{
@@ -194,7 +235,8 @@ font-size: 20px;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2rem;
-    margin-top: 80px;
+    margin-top: 50px;
+    color: #ffffff;
 }
 
 .bars{
@@ -203,6 +245,7 @@ font-size: 20px;
     align-items: center;
     position: relative;
     padding: 1rem 0px;
+    top: -20px;
 }
 
 
@@ -229,31 +272,38 @@ font-size: 20px;
 .portBar{
     background-color: rgb(93, 172, 14);
     width: 85%;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 .LandBar{
     background-color: rgb(93, 172, 14);
     width: 81%;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
+    
 }
 
 .EBar{
     background-color: rgb(93, 172, 14);
     width: 65%;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 .WBar{
     background-color: rgb(93, 172, 14);
     width: 78%;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 
 #contacts{
     margin: 8% 8% 0px 8%;
     padding-top: 30px;
+    
 }
 
 #con{
     font-size: 25px;
+    color: #201A1E;
 }
 
 #con1{
@@ -270,7 +320,7 @@ font-size: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #D0B49F;
+    background-color: #1ED760;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +334,7 @@ font-size: 20px;
 }
 
 .icon:hover{
-    background-image: linear-gradient(to bottom right, #D0B49F,#E4D4C8, #E2E6E7);
+    background-image: linear-gradient(to bottom right, #1ed760, #ffffff, #1DB954);
 
 }
 
@@ -316,14 +366,16 @@ font-size: 20px;
 
 footer{
     margin-top: 5%;
-    background-color: #D0B49F;
+    background-color: #1ED760;
     height: 280px;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
 #copyright{
     padding-top: 30px;
     text-align: center;
     font-weight: 500;
+    font-size: 15px;
 }
 
 .upArrow{
@@ -339,10 +391,10 @@ footer{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #D0B49F;
+    background-color: #1ed760;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #E2E6E7;
+    background-color: #ffffff;
 }
