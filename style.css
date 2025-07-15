@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    
 }
 
 
@@ -18,7 +19,7 @@ html{
     position: relative;
 }
 
-nav {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +28,13 @@ nav {
     width: 100%;
     background-image: linear-gradient(#1DB954,#1ED760);
     z-index: 1;
-    padding: 20px 125px;
+    padding: 20px;
+    padding-left: 125px;
+    padding-right: 50px;
     backdrop-filter: blur(50px);
     box-shadow: 0 0 10px rgba(0, 215, 96, 0.6), 0 0 20px rgba(0, 215, 96, 0.5), 0 0 40px rgba(0, 215, 96, 0.4);
 }
+
 
 
 
@@ -44,7 +48,23 @@ nav {
 }
 
 #home {
-    padding-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin: 0px 2% 0px 4.5% ;
+}
+
+.home-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+
+#person{
+    margin-top: 100px;
+    margin-left: 140px;
+    width: 80%;
+    
 }
 
 body{
@@ -98,12 +118,14 @@ body{
 }
 
 #userdetails{
-line-height: 2.5;
-font-size: 20px;
-color: #ffffff;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 #download{
+    margin-top: 25px;
     text-decoration: none;
     background-color: black;
     color: white;
@@ -127,41 +149,10 @@ color: #ffffff;
     text-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
 }
 
-.home-image{
-    width:45%;
-    height:75%;
-    bottom:0px;
-    position: absolute;
-    right:30px;
-}
 
-.group1{
-    position: absolute;
-    height:100%;
-    bottom:0px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: bottom 2s, left 1s;
-}
-
-/* .home-image:hover #shape{
-    bottom: 90px;
-}
-.home-image:hover #person{
-    left: 40%;
-} */
-
-#shape{
-    height: 350px;
-    padding-right: 20px;
-}
-
-#person{
-    top: -50px;
-}
 
 #about{
-    margin: 35% 8% 0px 8% ;
+    margin: 10% 8% 0px 8% ;
     border: 3px solid hsl(0, 0%, 100%, 0.3);
     padding: 1em;
     border-radius: 1em;
@@ -221,7 +212,7 @@ color: #ffffff;
 }
 
 #skill{
-    margin: 25% 8% 0px 8%;
+    margin: 10% 8% 0px 8%;
     border: 3px solid hsl(0, 0%, 100%, 0.3);
     padding: 1em;
     border-radius: 1em;
@@ -397,4 +388,116 @@ footer{
 
 ::-webkit-scrollbar-track{
     background-color: #ffffff;
+}
+
+
+#check{
+    display: none;
+}
+
+.icons{
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media (max-width:760px) {
+
+    
+
+    #closeIcon{
+        display:none;
+    }
+    #check:checked~.icons #menuIcon{
+        display: none;
+    }
+    #check:checked~.icons #closeIcon{
+        display: block;
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;
+        background-image: linear-gradient(#1DB954,#1ED760);
+        display: none;
+    }
+
+    #check:checked~.navbar{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+
+    .icons{
+        display: flex ;
+    }
+
+
+    #home{
+        padding-top: 100px;
+    }
+
+    html{
+        scroll-behavior: smooth;
+        scroll-padding-top: 510px;
+    
+    }
+
+    #mat{
+        margin-left: -80px;
+    }
+
+    #person{
+    width: 60%;
+    margin-top: -80px; 
+    margin-left: 80px;
+    }
+
+#username {
+    font-size: 40px;   
+}
+
+
+#userdetails{
+    font-size: 15px;  
+}
+
+
+
+.img1{
+    width: 70%;
+}
+
+.aboutContent{
+    font-size: 15px;
+    line-height: 1.8rem;
+}
+
+
+.skillp{
+    font-size: 15px;
+}
+
+.upArrow{
+    margin-top: -95px;
+}
+
+.infox{
+    font-size: 10px;
+}
+
 }

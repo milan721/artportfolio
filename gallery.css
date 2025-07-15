@@ -1,7 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body {
     background-color: #f9f9f9;
     color: #333;
     text-align: center;
@@ -31,7 +36,7 @@ body {
     transition: transform 0.3s;
   }
 
-  section{
+  #gallery{
     margin: 40px;
     border: 3px solid hsl(0, 0%, 100%, 0.3);
     padding: 0.5em;
@@ -58,6 +63,92 @@ body {
     transform: scale(1.05);
   }
   
+
+
+#contacts{
+    margin: 8% 8% 0px 8%;
+    padding-top: 30.5px;
+    
+}
+
+#con{
+    font-size: 25px;
+    color: #201A1E;
+    
+}
+
+#con1{
+    font-size: 20px;
+}
+
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1ED760;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.brands{
+    color: black;
+    font-size: 2rem;
+   
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, #1ed760, #ffffff, #1DB954);
+
+}
+
+.icon:hover .brands{
+    color: #201A1E;
+    animation: rotate 3s;  
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+     20%{
+        transform: rotate(-30deg);
+    }
+     40%{
+        transform: rotate(30deg);
+    }
+     60%{
+        transform: rotate(-30deg);
+    }
+     80%{
+        transform: rotate(30deg);
+    }
+     100%{
+        transform: rotate(-30deg);
+    }
+}
+
+footer{
+    margin-top: 10%;
+    background-color: #1ED760;
+    height: 280px;
+    box-shadow: 0 0 10px rgba(0, 215, 96, 0.4), 0 0 20px rgba(0, 215, 96, 0.3), 0 0 40px rgba(0, 215, 96, 0.2);
+}
+
+#copyright{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+}
 
 ::-webkit-scrollbar{
     width: 10px;

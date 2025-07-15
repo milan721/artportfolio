@@ -16,13 +16,26 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <div id="container">
         <!-- header -->
          <nav>
-            <!-- logo -->
-             <a id="mat" href="./index.html">MAT</a>
+        <header id="header">
+
+        <!-- logo -->
+        <a id="mat" href="./index.html">MAT</a>
+
+         <input type="checkbox" id="check">
+         <label for="check" class="icons">
+            <!-- menu icons -->
+             <i class='bx bx-menu' id="menuIcon"></i>
+             <!-- close icons -->
+              <i class='bx bxs-tag-x' id="closeIcon" ></i>
+         </label>
+         <nav class="navbar">
              <!-- links -->
               <ul>
                 <li class="listitem"><a class="links" href="#home">Home</a></li>
@@ -32,24 +45,25 @@
                 <li class="listitem"><a class="links" href="./gallery.html" target="_blank">Gallery</a></li>
               </ul>
          </nav>
+         </nav>
+         </header>
 
 
          <!-- Home -->
         <section id="home">
             <!-- left -->
+            <div class="home-body">
             <div class="home-content">
                 <h1 class="animate__animated animate__lightSpeedInLeft" id="username">I'm Milan Abraham<span id="lastname"> Thomas</span></h1>
                 <p class="animate__animated animate__lightSpeedInLeft" id="userdetails">I'm an aspiring full-stack developer and digital artist, passionate about blending code and creativity.
                 </p>
-                <a id="download" href="./pdfs/Milan (2).pdf" download>Download CV</a>
+                <a data-aos="fade-up" id="download" href="./pdfs/Milan (2).pdf" download>Download CV</a>
             </div>
 
             <!-- right image -->
             <div class="home-image">
-                <!-- shape
-                <img class="group1" id="shape" src="./images/1000147960__1_-removebg-preview.png" alt="shape"> -->
-                <!-- person -->
                 <img class="group1" id="person" src="./images/p44.png" alt="person">
+            </div>
             </div>
         </section>
 
@@ -61,14 +75,14 @@
                 
             <div class="aboutBody">
                 <div data-aos="fade-right" class="aboutImg">
-                    <a href="https://en.wikipedia.org/wiki/Black_hole" target="_blank"><img class="img1" src="./images/untitled10.png" alt="about"></a>
+                    <img class="img1" src="./images/untitled10.png" alt="about">
                 </div>
 
-                <div data-aos="fade-left" class="aboutContent">
+                <div  data-aos="fade-left" class="aboutContent">
                     <p>I'm a B.Tech graduate in Computer Science and Engineering with a strong passion for full stack web development and related technologies. As an aspiring full-stack developer, I would like to use various technologies like HTML, CSS, JavaScript, React, Figma, and Node.js to create and design web applications that are intuitive, responsive and user-friendly.
                     Alongside my technical endeavours, I'm also a passionate digital artist, who specialize in creating high-quality 2D and 3D art and animations using tools like Blender, Spline, Adobe and Unreal Engine <span id="boo"><a id="boo" href="./gallery.html" target="_blank">Gallery</a></span>.
                     My aim is to combine both this worlds to craft an immersive digital experience that's both functional and visually striking.</p>
-                <div data-aos="fade-left" class="information">
+                <div data-aos="fade-right" class="information">
                     <div class="infox">
                         <i class="fa-solid fa-user"></i>
                         <span>Milan Abraham Thomas</span>
